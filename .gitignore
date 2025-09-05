@@ -33,11 +33,12 @@ venv/
 ENV/
 
 # UV/Astral specific
-# (exclure caches ou fichiers temporaires si UV en génère)
+# Ignorer le lock et les fichiers temporaires
+uv.lock
 .uv-cache/
 uv_temp/
 
-# Pyproject.toml artifacts (poetry, hatch, etc.)
+# Pyproject.toml artifacts (PEP 582)
 __pypackages__/
 
 # Installer logs
